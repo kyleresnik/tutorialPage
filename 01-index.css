@@ -1,0 +1,70 @@
+/*COMMON ELEMENTS*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(./assets/steven-roe-1076654-unsplash.jpg);
+  background-size: cover;
+}
+p, h2 {
+  color: #EBDDF4;
+  font-size: 1.5em;
+}
+h1 {
+  color: #CDAEDE;
+  size: 10em;
+  text-align: center;
+  text-shadow: 3px 0 0 black;
+}
+.codeSnippet {
+  color: #CDAEDE;
+  font-size: 1.5em;
+}
+.transparentBox {
+  background: rgba(127,63,191,0.9);
+  margin: 10px 300px 20px 0;
+  padding: 0.5em;
+}
+/*HEADER*/
+header li {
+  font-size: 3.0em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+}
+header li:hover {
+  color: lightgreen;
+}
+nav#deadNav li#pageTitle {
+  color: white;
+}
+#headNav a:link{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+#headNav a:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: lightgoldenrodyellow;
+}
+/*SIDEBAR*/
+#sideBar {
+  width: 250px;
+  position: relative;
+  float: right;
+  display: block;
+  background: rgba(0,0,0,0.7);
+  margin: 1.5em 0 3.0em 1.5em;
+  padding: 1.7em 0.5em 2.0em 1.7em;
+}
+/*NAVIGATION*/
+li {
+  font-size: 1.5em;
+  text-align: center;
+  list-style: none;
+}
+/*MAIN SECTION*/
+/*FOOTER*/
+footer {
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 0 0 black;
+}

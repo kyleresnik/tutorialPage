@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Kyle Resnik">
+  <title>A Beginner's JavaScript Tutorial Page</title>
+  <link rel="stylesheet" type="text/css" href="01-index.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <!--Page Navigation-->
+      <h1>A Beginner's JavaScript Tutorial</h1>
+      <nav id="headNav">
+        <ul>
+          <li><a href="#linkToFunctions">Functions</li>
+          <li><a href="#linkToObjects">Objects</a></li>
+          <li><a href="#linkToArrays">Arrays</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--Sidebar-->
+  <section id="sideBar">
+    <div>
+      <h2>What Do I Need To Know?</h2>
+      <p>There are some concepts you may want to review before diving
+        headfirst into JavaScript fundamentals. JavaScript helps make
+        your webpage responsive and interactive. It helps to have knowledge
+        of both HTML5 and CSS3 before diving into JavaScript. So what 
+        exactly is JavaScript? JavaScript (or JS for short) is an
+        object-oriented programming language. It has a multitude of uses, 
+        such as running lines of code in response to events happening on
+        a webpage, store values inside variables, and overall make your
+        website more interesting to use!
+      </p>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <!--Main Sections-->
+  <!--Functions-->
+  <section class="codeSection">
+      <div class="transparentBox">
+        <h2><a name="linkToFunctions">Functions</a></h2>
+        <p>Functions are by far one of the most important aspects of JavaScript.
+          To understand the fundamentals of JS, you must become familiar with
+          how functions work and interact. To start a function, you begin with
+          the <em>function</em> keyword, followed by a name of your choice for 
+          said function. This name can be anything, but it helps to name it 
+          in a way that gives you or whoever else who may be reading the code an 
+          idea of what the function actually does. Let's look at an example:</p>
+          <pre><code class="codeSnippet">
+          let myName = "Kyle";
+          let myAge = 26;
+
+          function helloWorld(myName, myAge) {
+            document.write (myName + " is " + myAge + " years old.");
+          }
+          </code></pre>
+        <p>In the above example, the function is first named <em>helloWorld</em>. 
+          Next, within the parentheses following the function's name, we give it
+          parameters using the <em>let variables</em> defined above as 
+          "myName" and "myAge." Next, within curly brackets, we see code statements 
+          that define the function. The parameters are passed through the function 
+          and can be captured and manipulated. This statement will write a string 
+          of text to a document stream.
+        </p>
+      </div>
+  </section>
+  <br>
+  <br>
+
+  <!--Objects-->
+  <section class="codeSection">
+      <div class="transparentBox">
+        <h2><a name="linkToObjects">Objects</a></h2>
+        <p>In JavaScript, an <em>object</em> is a grouping of correlated data that 
+        can be accessed using <em>bracket notation</em>, not unlike how you would
+        access data in an array. Each property within an object is associated with 
+        a string value, making it easy to equate an object to an array. Much like 
+        many other things in JavaScript syntax, we start by initializing a variable. 
+        Let's look at an example:</p>
+        <pre><code class="codeSnippet">
+        let person = {
+          name: "Kyle",
+          age: 26,
+          gender: "male",
+          veryTired: true,
+        };
+        console.log(person.veryTired);
+        </code></pre>
+        <p>An object is composed of multiple different <em>members</em>, each with 
+        a different name and value. For instance, the member "age" has a number value
+        of 26. Members and value are separated by a colon and comma and the entire
+        object ends with a semicolon. You can store just about anything you want in 
+        an object, each with varying values and names. Information within an object 
+        can be accessed through <em>dot notation</em> as seen in the above example. 
+        After the object has been defined, the console has been told to log the 
+        "veryTired" member which will print out as "true."</p>
+      </div>
+  </section>
+  <br>
+  <br>
+
+  <!--Arrays-->
+  <section class="codeSection">
+      <div class="transparentBox">
+        <h2><a name="linkToArrays">Arrays</a></h2>
+        <p>The idea behind a JavaScript <em>array</em> is that it acts as a list 
+        of values that you can access through an integer that is known as a <em>key</em>. 
+        It is important to note that the list of values held within an array count 
+        upwards from 0 instead of 1 as might be expected. Here's what an array 
+        might look like:</p>
+        <code class="codeSnippet"><pre>
+        let myDinner = ['pasta', 'sauce', 'spices', 'chicken', 'cheese']
+        
+        console.log(myDinner.length);
+        </pre></code>
+        <p>In essence, the array functions as an object. In fact, if you were to 
+        log the type of the variable "myDinner" to the console, it would tell you 
+        that it is an object. Like most JavaScript code, you begin the array by 
+        defining it. In this case, we've given our array the name "myDinner" and 
+        filled in its contents using square brackets. To access the values within 
+        this object, you must keep in mind that, since the array counts up from 0, 
+        the key for 'sauce' is considered 1, not 2. Thus, 'pasta' is 0, 'sauce' is 1, 
+        'spices' is 2, 'chicken' is 3, and finally 'cheese' is 4.
+        </p>
+      </div>
+  </section>
+  <br>
+  <br>
+
+  <!--Footer / Copyright-->
+  <div>
+    <footer>
+      <p>&copy;2018, "Some Company" Tutorials | A tutorial website by Kyle Resnik</p>
+    </footer>
+  </div>
+</body>
+</html>
